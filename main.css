@@ -1,0 +1,589 @@
+.container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Archangelsk';
+    src: url('./font/Archangelsk/Archangelsk.woff');
+}
+
+/* FLEX */
+.d-flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.end {
+    align-items: end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+/* BTN */
+.btn {
+    padding: 20px 50px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(248, 242, 0, 1);
+}
+
+.btn-form {
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(248, 242, 0, 1);
+}
+
+/* FORM */
+
+.promotion-form-wrapper {
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.promotion-form-name {
+    margin-bottom: 35px;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(119, 119, 119, 1);
+}
+
+.promotion-form-name::placeholder {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.promotion-form-email {
+    margin-bottom: 35px;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(119, 119, 119, 1);
+}
+
+.promotion-form-email::placeholder {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.promotion-file-wrapper {
+    margin-bottom: 35px;
+    padding: 40px 137px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-image: url(./img/border.svg) 1 1 1 1 stretch stretch;
+}
+
+.promotion-file-label {
+    position: relative;
+}
+
+.promotion-file-label span {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.promotion-file-input {
+    position: absolute;
+    z-index: -1;
+}
+
+.promotion-file-des {
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.promotion-checkbox-wrapper {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    gap: 10px;
+}
+
+/* HOVER */
+.header-social>div:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* HEADER HERO */
+.header-hero {
+    margin: 0 auto;
+    height: 1000px;
+    background-image: url(./img/header_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header-hero-wrapper {
+    padding-top: 20px;
+    height: 1000px;
+}
+
+.header-social {
+    gap: 40px;
+}
+
+.header-social>div:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.all-platforms {
+    margin-left: auto;
+    padding: 70px;
+    width: 625px;
+    font-family: 'Archangelsk';
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+    clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(248, 242, 0, 1);
+}
+
+
+
+.all-platforms-title h2 {
+    margin-bottom: 25px;
+}
+
+/* GAME */
+
+.game-descriptions {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.game-descriptions-wrapper {
+    padding: 70px 0;
+}
+
+.game-descriptions-title {
+    margin-bottom: 70px;
+}
+
+.game-descriptions-title h1 {
+    margin-bottom: 25px;
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.game-descriptions-title span {
+    color: rgba(82, 190, 220, 1);
+}
+
+/* grid */
+.game-descriptions-img {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(196px, auto);
+    grid-gap: 30px;
+}
+
+.wmax {
+    grid-column: span 7;
+}
+
+.wmin {
+    grid-column: span 5;
+}
+
+.h2 {
+    grid-row: span 2;
+}
+
+.game-descriptions-img div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-descriptions-img div {
+    clip-path: polygon(40px 0%, 100% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 100%, 0% 40px);
+}
+
+/* PROMOTION */
+
+.promotion {
+    padding: 70px 0;
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.promotion::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-image: url(./img/border_top.png);
+}
+
+.promotion-wrapper {
+    flex-wrap: wrap;
+}
+
+.promotion-title {
+    width: 960px;
+}
+
+.promotion-wrapper-sticker {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.promotion-wrapper-sticker div:first-child {
+    margin-right: 32px;
+}
+
+.promotion-wrapper-sticker h2 {
+    padding-top: 55px;
+}
+
+.promotion-title p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.promotion-title span {
+    color: rgba(82, 190, 220, 1);
+}
+
+.promotion-sticker {
+    width: 132px;
+    height: 132px;
+    background-image: url(./img/promotion_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.promotion-sticker::before {
+    content: 'акция';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31px;
+    transform: rotate(-45deg);
+    color: rgba(248, 242, 0, 1);
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.promotion-img {
+    margin-top: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+
+.promotion-xbox-bg {
+    padding: 25px 0 80px 164px;
+    width: 460px;
+    height: 456px;
+    background-image: url(./img/bgxbox.png);
+    background-size: cover;
+    position: absolute;
+    right: 320px;
+}
+
+.promotion-ps5-bg {
+    padding: 25px 0 80px 164px;
+    width: 460px;
+    height: 456px;
+    background-image: url(./img/bgps5.png);
+}
+
+/* ADVERTISTING */
+.advertising {
+    padding-top: 140px;
+    padding-bottom: 70px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(248, 242, 0, 1);
+    position: relative;
+}
+
+.advertising::before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-image: url(./img/border_top2.png);
+    position: absolute;
+}
+
+.advertising-col1-img {
+    margin-bottom: 26px;
+}
+
+.advertising-col1-logo {
+    gap: 25px;
+}
+
+.advertising-col2 {
+    width: 625px;
+}
+
+.advertisting-title>h2 {
+    margin-bottom: 25px;
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+.advertisting-title>p {
+    margin-bottom: 25px;
+}
+
+.advertisting-title>ul>li {
+    margin-bottom: 20px;
+    padding-left: 42px;
+    position: relative;
+}
+
+.advertisting-title>ul>li:last-child {
+    margin-bottom: 40px;
+}
+
+.advertisting-title>ul>li:nth-child(1):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.advertisting-title>ul>li:nth-child(2):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.advertisting-title>ul>li:nth-child(3):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+/* BUY */
+.buy {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.buy-img {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url(./img/buy_img.jpg);
+    background-repeat: repeat-x;
+}
+
+.buy-wrapper {
+    margin-left: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 32px;
+}
+
+.buy-title>h2 {
+    margin-bottom: 25px;
+    font-family: Archangelsk;
+    font-size: 62px;
+    line-height: 63px;
+}
+
+.buy-title>p {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: rgba(82, 190, 220, 1);
+}
+
+.buy-title>p:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.buy-title>ul>li {
+    display: flex;
+    align-items: center;
+    padding-left: 42px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.buy-title>ul>li:nth-of-type(1):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker_buy1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.buy-title>ul>li:nth-of-type(2):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker_buy2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.buy-title>ul>li:nth-of-type(3):before {
+    content: '';
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/marker_buy3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.buy-title>ul>li:last-child {
+    margin-bottom: 70px;
+}
+
+.logo-platform {
+    width: 320px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 50px 80px;
+}
+
+/* FOOTER */
+
+.footer-top {
+    padding: 13px 0;
+}
+
+.footer-logo {
+    gap: 32px;
+}
+
+.footer-text {
+    gap: 32px;
+}
+
+.footer-text>a {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.footer-bot {
+    padding: 13px 0;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
